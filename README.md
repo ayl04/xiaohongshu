@@ -1,6 +1,6 @@
 # 小哈书（xiaohashu）· 仿小红书微服务项目
 
-> 基于 **Spring Cloud Alibaba** 的内容社区微服务，覆盖认证授权、网关、笔记发布、用户关系、对象存储、分布式 ID 等完整链路，是一份可写进简历的微服务实战项目。
+> 基于 **Spring Cloud Alibaba** 的内容社区微服务，覆盖认证授权、网关、笔记发布、用户关系、对象存储、分布式 ID 等完整链路。
 
 <div align="center">
 
@@ -18,7 +18,7 @@
 
 小哈书是一个「仿小红书」的内容社区，采用 **Spring Boot 3 + Spring Cloud Alibaba** 微服务架构，后端按业务拆分为 8 个服务，通过 **Spring Cloud Gateway** 统一入口，**Nacos** 做服务注册与配置中心，**Sa-Token** 做认证授权，**Redis + Caffeine** 做多级缓存，**RocketMQ** 做跨实例缓存同步。
 
-项目重点打磨了几个面试高频的技术点：**自定义 Starter 自动装配、网关 Sa-Token 上下文透传、OpenFeign 跨服务 ThreadLocal 透传、多级缓存治理（雪崩/穿透/击穿）、CompletableFuture 并发聚合下游、RocketMQ 广播 + 延时双删、Redis ZSet + Lua 原子操作**。
+项目沉淀了以下核心技术点：**自定义 Starter 自动装配、网关 Sa-Token 上下文透传、OpenFeign 跨服务 ThreadLocal 透传、多级缓存治理（雪崩/穿透/击穿）、CompletableFuture 并发聚合下游、RocketMQ 广播 + 延时双删、Redis ZSet + Lua 原子操作**。
 
 ---
 
