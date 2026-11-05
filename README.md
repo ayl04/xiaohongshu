@@ -145,7 +145,8 @@ xiaohashu
 ├── xiaohashu-user-relation               # 用户关系服务（关注 / 粉丝）
 ├── xiaohashu-oss                         # 对象存储（MinIO / OSS 策略模式）
 ├── xiaohashu-kv                          # KV 存储（笔记正文，Cassandra）
-└── xiaohashu-distributed-id-generator    # 分布式 ID（美团 Leaf）
+├── xiaohashu-distributed-id-generator    # 分布式 ID（美团 Leaf）
+└── frontend                               # 配套前端（Vue3 + Vite，严格匹配后端已实现功能）
 ```
 
 ---
@@ -187,7 +188,7 @@ xiaohashu
 4. **启动后端服务**（建议顺序）：`xiaohashu-distributed-id-generator` → `xiaohashu-oss` / `xiaohashu-kv` → `xiaohashu-user` / `xiaohashu-note` / `xiaohashu-user-relation` → `xiaohashu-auth` → `xiaohashu-gateway`；
 5. **启动前端**：
    ```bash
-   cd xiaohashu-vue3
+   cd frontend
    npm install
    npm run dev
    ```
